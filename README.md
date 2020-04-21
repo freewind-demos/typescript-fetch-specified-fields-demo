@@ -1,18 +1,9 @@
-TypeScript Hello World Demo
-===========================
+TypeScript Fetch Specified Fields Demo
+======================================
+
+可以利用typescript的typing来指定要求返回的fields，按需取数据
 
 ```
 npm install
 npm run demo
 ```
-
-Note:
-
-`esModuleInterop` is recommended to set to `true`,
-since we can have consistent importing syntax with babel,
-always use:
-
-```
-import some from 'some'
-```
-

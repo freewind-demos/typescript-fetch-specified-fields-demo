@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "demo": "ts-node hello.ts"
+    "demo": "ts-node ./hello.ts"
   },
   "devDependencies": {
     "@types/node": "13.7.7",
