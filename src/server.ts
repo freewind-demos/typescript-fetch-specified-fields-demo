@@ -1,12 +1,4 @@
-type User = {
-  id: number,
-  username: string,
-  email: string,
-}
-
-type SpecifyFields<T> = {
-  [key in keyof T]?: true
-}
+import {SpecifyFields, User} from './common';
 
 function loadAllUsers(): User[] {
   return [
@@ -27,21 +19,7 @@ function keepSpecifiedFields<T extends object>(user: T, specifyUserFields: Speci
   return user;
 }
 
-function searchUsers(keyword: string, specifyUserFields: SpecifyFields<User>): Partial<User>[] {
+export function searchUsers(keyword: string, specifyUserFields: SpecifyFields<User>): Partial<User>[] {
   const matchedUsers = loadAllUsers().filter(it => it.username.includes(keyword))
   return matchedUsers.map(it => keepSpecifiedFields(it, specifyUserFields))
 }
-
-const users1 = searchUsers('aaa', {
-  id: true,
-  username: true
-})
-console.log('### users1', users1);
-
-const users2 = searchUsers('000', {
-  id: true,
-  username: true,
-  email: true
-})
-console.log('### users2', users2);
-

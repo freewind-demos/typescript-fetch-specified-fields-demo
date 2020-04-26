@@ -1,7 +1,7 @@
 TypeScript Fetch Specified Fields Demo
 ======================================
 
-可以利用typescript的typing来指定要求返回的fields，按需取数据
+Try to find a way with typescript's typing to allow client specifying needed fields from server.
 
 ```
 npm install
