@@ -1,10 +1,10 @@
 {
-  "scripts": {
-    "demo": "ts-node ./src/client.ts"
-  },
-  "devDependencies": {
-    "@types/node": "13.7.7",
-    "ts-node": "8.6.2",
-    "typescript": "3.8.3"
-  }
+    "scripts": {
+        "start": "ts-node ./src/client.ts"
+    },
+    "devDependencies": {
+        "@types/node": "13.7.7",
+        "ts-node": "8.6.2",
+        "typescript": "3.8.3"
+    }
 }
